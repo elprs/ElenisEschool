@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace School.Database
+namespace School.Entities
 {
-    public class Class1
+   public class Course
     {
+        public int CourseId { get; set; }
+        public string Title { get; set; }
     }
 }

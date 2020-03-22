@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace School.Entities
 {
-    public class Class1
+    public class Student
     {
+            public int StudentId { get; set; }
+            public string FirstName { get; set; }
+        
     }
 }
