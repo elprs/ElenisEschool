@@ -11,5 +11,9 @@ namespace School.Entities
         public int SubjectId { get; set; }
         public string Title { get; set; }
 
+        public virtual Course Course { get; set; }
+        public virtual Assignment Assignment { get; set; }
+
+
     }
 }
