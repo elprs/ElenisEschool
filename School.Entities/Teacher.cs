@@ -10,6 +10,11 @@ namespace School.Entities
     {
         public int TeacherId { get; set; }
         public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Telephone { get; set; }
+        public string Email { get; set; }
+        public List<string> PortofolioURLs { get; set; }
+        public double Salary { get; set; }
 
         public virtual ICollection<Course> Courses { get; set; }
         public virtual ICollection<Subject> Subjects { get; set; }

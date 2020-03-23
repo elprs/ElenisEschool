@@ -10,6 +10,7 @@ namespace School.Entities
     { 
             public int DiscountId { get; set; }
             public string Title { get; set; }
+            public double Percentage { get; set; }
 
         public virtual Student Student { get; set; }
         public virtual Payment Payment { get; set; }

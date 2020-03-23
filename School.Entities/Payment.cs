@@ -11,7 +11,11 @@ namespace School.Entities
     {
         [ForeignKey("Discount")]
         public int PaymentId { get; set; }
-        public bool IsDone { get; set; }
+        public double TotalAmount { get; set; }
+        public DateTime DueDate { get; set; }
+        public bool IsCompleted { get; set; }
+
+
         public virtual Discount Discount { get; set; }
     }
 }

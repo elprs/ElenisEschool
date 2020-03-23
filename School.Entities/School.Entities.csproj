@@ -59,6 +59,7 @@
     <Compile Include="Student.cs" />
     <Compile Include="Subject.cs" />
     <Compile Include="Teacher.cs" />
+    <Compile Include="Type.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
