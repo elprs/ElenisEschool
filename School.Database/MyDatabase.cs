@@ -11,13 +11,13 @@ namespace School.Database
     {
         public MyDatabase() : base("Sindesmos")
         { }
-        //public DbSet<Course> Courses { get; set; }
-        //public DbSet<Assignment> Assignments { get; set; }
-        //public DbSet<Teacher> Teachers { get; set; }
-        //public DbSet<Subject> Subjects { get; set; }
-        //public DbSet<Student> Students { get; set; }
-        //public DbSet<Discount> Discounts { get; set; }
-        //public DbSet<Payment> Payments { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Assignment> Assignments { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
     }
 }
