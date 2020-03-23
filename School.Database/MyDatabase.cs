@@ -18,6 +18,6 @@ namespace School.Database
         public DbSet<Student> Students { get; set; }
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<Payment> Payments { get; set; }
-        
+
     }
 }

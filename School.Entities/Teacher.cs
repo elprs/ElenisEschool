@@ -13,6 +13,5 @@ namespace School.Entities
 
         public virtual ICollection<Course> Courses { get; set; }
         public virtual ICollection<Subject> Subjects { get; set; }
-        public virtual ICollection<Student> Students { get; set; }
     }
 }
