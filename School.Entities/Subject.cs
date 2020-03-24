@@ -1,9 +1,6 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace School.Entities
 {
@@ -11,10 +8,11 @@ namespace School.Entities
     {
         [ForeignKey("Assignment")]
         public int SubjectId { get; set; }
+        [Required, MinLength(2), MaxLength(50)]
         public string Title { get; set; }
-
         public virtual Course Course { get; set; }
         public virtual Assignment Assignment { get; set; }
+        public virtual ICollection<Teacher> Teachers { get; set; }
 
 
     }
