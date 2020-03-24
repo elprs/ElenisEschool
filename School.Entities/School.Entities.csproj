@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomValidations\ValidationMethods.cs" />
     <Compile Include="Discount.cs" />
     <Compile Include="Assignment.cs" />
     <Compile Include="Course.cs" />

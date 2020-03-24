@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using School.Entities.CustomValidations;
 
 namespace School.Entities
 {
@@ -15,7 +16,8 @@ namespace School.Entities
         [Required, EmailAddress]
         public string Email { get; set; }
         public List<string> PortofolioURLs { get; set; }
-        [Required, Range(0D, 1000000D)]
+       // [Required, Range(0D, double.MaxValue)]
+       [CustomValidation(typeof(ValidationMethods), "ValidateGreaterOrEqualToZero")]
         public double Salary { get; set; }
         public virtual ICollection<Subject> Subjects { get; set; }
     }
