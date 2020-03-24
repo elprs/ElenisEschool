@@ -1,9 +1,8 @@
 ﻿namespace School.Database.Migrations
 {
-    using System;
-    using System.Data.Entity;
+    using System.Collections.Generic;
     using System.Data.Entity.Migrations;
-    using System.Linq;
+    using School.Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<School.Database.MyDatabase>
     {
@@ -14,10 +13,12 @@
 
         protected override void Seed(School.Database.MyDatabase context)
         {
-            //  This method will be called after migrating to the latest version.
+            Teacher t1 = new Teacher() { FirstName = "Giorgos", LastName = "Pasparakis", Email = "pasparakis@gmail.com", Telephone = "1234567890", Subjects = new List<Subject>() { }, PortofolioURLs = new List<string>() { }, Salary = 5000 } ;
+            
+            
+           // context.Teachers.Add(t1);
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+
         }
     }
 }

@@ -18,7 +18,7 @@ namespace School.Entities.CustomValidations
             }
             else
             {
-                return new ValidationResult(string.Format("The field {0} must be greater than or equal to zero", context.MemberName), new List<string> { context.MemberName });
+                return new ValidationResult(string.Format("The field {0} must be greater than or EEEEEEEEEEEEEEEEEEEequal to zero", context.MemberName), new List<string> { context.MemberName });
             }
         }
     }

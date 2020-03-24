@@ -11,7 +11,7 @@ namespace School.Entities
     public class Assignment
     {
         public int AssignmentId { get; set; }
-        [Required, MaxLength(50), MinLength(2)]
+        [Required(ErrorMessage = "Required field"), MaxLength(50), MinLength(2)]
         public string Title { get; set; }
         public virtual Subject Subject { get; set; }
     }
